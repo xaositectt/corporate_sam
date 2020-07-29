@@ -1,0 +1,39 @@
+{
+  "name": "corporate-sam",
+  "version": "1.0.0",
+  "description": "corporate aws sam poc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "yarn clean && webpack",
+    "clean": "rimraf build/",
+    "validate": "sam validate",
+    "deploy": "sam deploy --guided",
+    "watch": "npm run build -- --watch",
+    "lint": "eslint --ext .ts ."
+  },
+  "author": "xaositectt",
+  "license": "ISC",
+  "devDependencies": {
+    "@berlitz/eslint-config-max-base": "^2.1.3",
+    "@types/webpack": "^4.41.21",
+    "@typescript-eslint/eslint-plugin": "^3.7.1",
+    "@typescript-eslint/parser": "^3.7.1",
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.5",
+    "eslint-plugin-react-hooks": "^4.0.8",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2",
+    "ts-loader": "^8.0.1",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "@types/aws-lambda": "^8.10.59",
+    "winston": "^3.3.3"
+  }
+}
