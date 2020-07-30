@@ -37,6 +37,18 @@ Resources:
             Path: /goodbye
             Method: get
 
+  PutApplication:
+    Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
+    Properties:
+      Description: Add a new course application or update an existing one.
+      Handler: put_application.handler
+      Role: arn:aws:iam::100277016170:role/CorporateSam
+      Events:
+        Api:
+          Type: Api
+          Properties:
+            Path: /
+            Method: POST
 
   GetApplications:
     Type: AWS::Serverless::Function
