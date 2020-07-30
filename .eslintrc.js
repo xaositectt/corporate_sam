@@ -13,6 +13,7 @@ module.exports = {
   },
   rules: {
     "@typescript-eslint/no-floating-promises": ["error"],
-    "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off"
   },
 }
