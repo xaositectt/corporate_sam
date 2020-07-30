@@ -10,7 +10,7 @@
     "validate": "sam validate",
     "deploy": "sam deploy --guided",
     "watch": "npm run build -- --watch",
-    "lint": "eslint --ext .ts ."
+    "lint": "eslint --ext .ts .",
   },
   "author": "xaositectt",
   "license": "ISC",
