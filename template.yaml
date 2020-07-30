@@ -38,6 +38,19 @@ Resources:
             Method: get
 
 
+  GetApplications:
+    Type: AWS::Serverless::Function
+    Properties:
+      Description: List all the course applications.
+      Handler: get_applications.handler
+      Role: arn:aws:iam::100277016170:role/CorporateSam
+      Events:
+        Api:
+          Type: Api
+          Properties:
+            Path: /
+            Method: GET
+
   CourseApplications:
     Type: AWS::Serverless::SimpleTable
     Properties:

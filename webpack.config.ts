@@ -4,7 +4,8 @@ import { Configuration } from 'webpack'
 const config: Configuration = {
   entry: {
     hello: './src/lambda/hello.ts',
-    goodbye: './src/lambda/goodbye.ts'
+    goodbye: './src/lambda/goodbye.ts',
+    get_applications: './src/lambda/get_applications.ts'
   },
   output: {
     filename: '[name].js',
