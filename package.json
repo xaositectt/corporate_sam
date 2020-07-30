@@ -11,6 +11,7 @@
     "deploy": "sam deploy --guided",
     "watch": "npm run build -- --watch",
     "lint": "eslint --ext .ts .",
+    "dev": "yarn build && sam local start-api"
   },
   "author": "xaositectt",
   "license": "ISC",
